@@ -13,8 +13,53 @@
     <script defer src="js/script.js"></script>
 </head>
 <body>
-    <h1>age:<div id="age"></div></h1>
-    <h1>pathway:<div id="pathway"></div></h1>
-    <h1>price:<div id="price"></div></h1>
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-10">
+                <header class="d-flex align-items-center px-4 text-white">
+                    <i class="bi bi-train-front-fill"></i>
+                    <h3 class="mb-0 ms-3">Train Ticket</h3>
+                </header>
+                <div class="row">
+                    <div class="col-12">
+                        <main>
+                            <div class="row p-4 h-100">
+                                <div class="col-8 h-100 ">
+                                    <ul class="h-100 d-flex flex-column justify-content-around p-0">
+                                        <li><h2>Età : <span id="age"></span></h2></li>
+                                        <li><h2>Distanza : <span id="pathway"></span>Km</h2></li>
+                                        <li><h2>Prezzo : <span id="price"></span>&euro;</h2></li>
+                                    </ul>                              
+                                                                       
+                                </div>
+                                <div class="col-4 border-start">
+                                    
+                                    <ul class="p-0">
+                                        <li><p>Prezzo : 0.21&euro; km</p></li>
+                                        <li><p>Sconti applicati</p></li>
+                                        <li><p>Minorenne : -20%</p> </li>
+                                        <li><p>Over 65 : -40%</p> </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                    <div class="col-12">
+                        <footer>
+                            <div class="container-sm">
+                                <div class="row">
+                                    <div class="col-12 text-center ">
+                                        <p>Grazie per aver Viaggiato con noi</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

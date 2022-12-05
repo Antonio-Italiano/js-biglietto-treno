@@ -22,7 +22,7 @@ const priceElement = document.getElementById('price');
 // 3 - generare gli sconti applicati
 const price = 0.21;
 const price_minor = price - 0.042 ;
-const price_hover65 = price - 0.084 ;
+const price_over65 = price - 0.084 ;
 // console.log(price, price_minor, price_hover65)
 
 // 4 - chiedere all'utente di inserire la sua Età e distanza
@@ -31,14 +31,14 @@ const yourPathway = parseInt(prompt('Inserisci la distanza della tratta in km', 
 // console.log(yourAge, yourPathway);
 
 // 5 - calcolare il prezzo del biglietto 
-let ticket = 0.21 * yourPathway;
+let ticket = Math.round(0.21 * yourPathway);
 
-if (yourAge < 19) {
-    ticket = price_minor * yourPathway;
+if (yourAge < 18) {
+    ticket = Math.round(price_minor * yourPathway);
 } else if (yourAge > 64) {
-    ticket = price_hover65 * yourPathway;
+    ticket = Math.round(price_over65 * yourPathway);
 }
-// console.log( ticket )
+console.log( ticket )
 
 // 6 - stampare il risultato sullo schermo
 ageElement.innerText = yourAge;
