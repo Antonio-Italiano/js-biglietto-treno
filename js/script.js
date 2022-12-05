@@ -11,3 +11,9 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio
 5 - calcolare il prezzo del biglietto 
 6 - stampare il risultato sullo schermo
 */
+
+// 1 - recuperare elementi age, pathway e price in pagina
+const ageElement = document.getElementById('age');
+const pathwayElement = document.getElementById('pathway');
+const priceElement = document.getElementById('price');
+// console.log(ageElement, pathwayElement, priceElement)
