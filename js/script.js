@@ -39,3 +39,8 @@ if (yourAge < 19) {
     ticket = price_hover65 * yourPathway;
 }
 // console.log( ticket )
+
+// 6 - stampare il risultato sullo schermo
+ageElement.innerText = yourAge;
+pathwayElement.innerText = yourPathway;
+priceElement.innerText = ticket;
