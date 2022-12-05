@@ -17,3 +17,9 @@ const ageElement = document.getElementById('age');
 const pathwayElement = document.getElementById('pathway');
 const priceElement = document.getElementById('price');
 // console.log(ageElement, pathwayElement, priceElement)
+
+// 2 - generare il prezzo standard per Km
+const price = 0.21;
+const price_minor = price - 0.042 ;
+const price_hover65 = price - 0.084 ;
+// console.log(price, price_minor, price_hover65)
