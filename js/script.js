@@ -31,16 +31,16 @@ const yourPathway = parseInt(prompt('Inserisci la distanza della tratta in km', 
 // console.log(yourAge, yourPathway);
 
 // 5 - calcolare il prezzo del biglietto 
-let ticket = Math.round(0.21 * yourPathway);
+let ticket = 0.21 * yourPathway;
 
 if (yourAge < 18) {
-    ticket = Math.round(price_minor * yourPathway);
+    ticket = price_minor * yourPathway;
 } else if (yourAge > 64) {
-    ticket = Math.round(price_over65 * yourPathway);
+    ticket = price_over65 * yourPathway;
 }
 console.log( ticket )
 
 // 6 - stampare il risultato sullo schermo
 ageElement.innerText = yourAge;
 pathwayElement.innerText = yourPathway;
-priceElement.innerText = ticket;
+priceElement.innerText = ticket.toFixed(2);
